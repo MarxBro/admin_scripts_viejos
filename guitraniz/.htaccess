@@ -1,0 +1,5 @@
+AuthName "Ponete el password"
+AuthType Basic
+AuthUserFile /var/www/html/guitrani/.htpasswd
+require valid-user
+

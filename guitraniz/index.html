@@ -1,0 +1,139 @@
+<html>
+<head>
+<!-- 	<link rel="stylesheet" href="http://www.semantic-ui.com/dist/components/form.css">
+ -->	 
+ 		<meta charset="utf-8" />
+    <title>GüiTranny</title>
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/> --> 
+ 		<link rel="stylesheet" type="text/css" href="http://www.semantic-ui.com/dist/components/reset.css">
+		<link rel="stylesheet" type="text/css" href="http://www.semantic-ui.com/dist/components/site.css">
+
+		<link rel="stylesheet" type="text/css" href="http://www.semantic-ui.com/dist/components/container.css">
+		<link rel="stylesheet" type="text/css" href="http://www.semantic-ui.com/dist/components/grid.css">
+		<link rel="stylesheet" type="text/css" href="http://www.semantic-ui.com/dist/components/header.css">
+		<link rel="stylesheet" type="text/css" href="http://www.semantic-ui.com/dist/components/image.css">
+		<link rel="stylesheet" type="text/css" href="http://www.semantic-ui.com/dist/components/menu.css">
+
+		<link rel="stylesheet" type="text/css" href="http://www.semantic-ui.com/dist/components/divider.css">
+		<link rel="stylesheet" type="text/css" href="http://www.semantic-ui.com/dist/components/segment.css">
+		<link rel="stylesheet" type="text/css" href="http://www.semantic-ui.com/dist/components/form.css">
+		<link rel="stylesheet" type="text/css" href="http://www.semantic-ui.com/dist/components/input.css">
+		<link rel="stylesheet" type="text/css" href="http://www.semantic-ui.com/dist/components/button.css">
+		<link rel="stylesheet" type="text/css" href="http://www.semantic-ui.com/dist/components/list.css">
+		<link rel="stylesheet" type="text/css" href="http://www.semantic-ui.com/dist/components/message.css">
+    <link rel="stylesheet" type="text/css" href="http://www.semantic-ui.com/dist/components/icon.css">
+		<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/Semantic-Org/UI-Input/master/input.css">
+
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script src="http://www.semantic-ui.com/dist/semantic.min.js"></script>
+    <script src="http://www.semantic-ui.com/dist/components/form.js"></script>
+    <script src="http://www.semantic-ui.com/dist/components/transition.js"></script>
+
+<style type="text/css">
+    body {
+      background-color: #dbdbdb;
+    }
+    body > .grid {
+      height: 100%;
+    }
+    .image {
+      margin-top: -100px;
+    }
+    .column {
+      max-width: 450px;
+    }
+  </style>
+
+    <!--<script>
+  $(document)
+    .ready(function() {
+      $('.ui.form')
+        .form({
+          fields: {
+            file: {
+              identifier  : 'file',
+              rules: [
+                {
+                  type   : 'empty',
+                  prompt : 'Por favor elegí un archivo, piolaaa!'
+                },
+                {
+                  //type   : 'email',
+                 // prompt : 'Please enter a valid e-mail'
+                }
+              ]
+            },
+            
+          }
+        })
+      ;
+    })
+  ;
+  
+-</script>-->
+</head>
+<body>
+
+	
+
+<div class="ui middle aligned center aligned grid">
+  
+  <div class="column">
+    <h2 class="ui teal header">
+     
+      <div class="content">
+        GüiTranny - subite un algo
+      </div>
+   
+    </h2>
+
+    <form enctype="multipart/form-data" action="guitrani.cgi" method="post" class="ui large form">
+      <div class="ui stacked segment">
+      
+       <!--  
+       <div class="field">
+          <div class="ui left icon input">
+            <i class="user icon"></i>
+            <input type="text" name="email" placeholder="E-mail address">
+          </div>
+      </div> 
+      -->
+                 
+        <div class="field">
+          <div class="ui left icon input">
+            <i class=" search icon"></i>
+            <input type="file" name="file"/>
+          </div>
+        </div>
+        
+  
+          <!--  
+           
+        <div class="field">
+          <label for="file" class="ui icon button">
+            <i class="file icon"></i>
+            Buscar Archivo
+          </label>
+          <input type="file" id="file" style="display:none">
+        </div>
+-->
+          
+        <input type="submit" name="submit" value="Subir Archivo" class="ui fluid large teal submit button" />
+        <!--class="ui fluid large teal submit button">-->
+      </div>
+
+      <div class="ui error message"></div>
+
+    </form>
+
+    <!-- <div class="ui message">
+      New to us? <a href="#">Sign Up</a>
+    </div>
+     -->
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+######################################################################
+# Ejemplo de config para - gui tranny
+######################################################################
+<Directory /var/www/html/guitrani>
+    Options +ExecCGI
+    AllowOverride All
+</Directory>
+<Directory /var/www/html/guitrani/uploads>
+    Options -Indexes
+</Directory>
+<VirtualHost *:80> # Puede ser una Ip tmb...
+    DocumentRoot /var/www/html/guitrani
+    ServerName guitranny.dominio.com.ar
+    RewriteEngine On
+    RewriteOptions Inherit
+</VirtualHost>
